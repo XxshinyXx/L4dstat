@@ -4,6 +4,7 @@ import { WebSocketServer } from "ws";
 import { createServer } from "http";
 import routes from "./routes";
 import { networkMonitor } from "./networkMonitor";
+import { storage } from "./storage";
 
 const app = express();
 const server = createServer(app);
