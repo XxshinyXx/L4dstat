@@ -33,7 +33,7 @@ export default function NetworkChart() {
 
   // WebSocket connection for real-time updates
   useEffect(() => {
-    const ws = new WebSocket(`ws://${window.location.host}/ws`);
+    const ws = new WebSocket(`ws://${window.location.hostname}:3002/ws`);
 
     ws.onopen = () => {
       console.log('Connected to WebSocket');
