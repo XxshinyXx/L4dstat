@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { storage } from "./storage";
-import { networkDataSchema } from "@shared/schema";
 import si from "systeminformation";
 
 const router = Router();
@@ -18,7 +17,7 @@ router.get("/api/network/recent", async (req, res) => {
 });
 
 // Get current network stats
-router.get("/api/network/current", async (req, res) => {
+router.get("/api/network/current", async (_req, res) => {
   try {
     const networkStats = await si.networkStats();
     const timestamp = Date.now();
