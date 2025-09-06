@@ -1,3 +1,4 @@
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Monitor, Wifi, Activity, Clock } from 'lucide-react';
 import NetworkChart from '../components/NetworkChart';

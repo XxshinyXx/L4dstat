@@ -1,6 +1,6 @@
 import si from "systeminformation";
 import { storage } from "./storage";
-import { NetworkData } from "@shared/schema";
+import { NetworkData } from "../shared/schema";
 
 export class NetworkMonitor {
   private intervalId: NodeJS.Timeout | null = null;

@@ -1,6 +1,6 @@
+import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { useQuery } from '@tanstack/react-query';
-import { useEffect, useState } from 'react';
 
 interface NetworkDataPoint {
   timestamp: number;

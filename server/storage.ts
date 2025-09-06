@@ -1,4 +1,4 @@
-import { NetworkData } from "@shared/schema";
+import { NetworkData } from "../shared/schema";
 
 export interface IStorage {
   addNetworkData(data: NetworkData): Promise<void>;
